@@ -1,4 +1,4 @@
-$(function wrap() {
+$(function dynamicPage() {
 
  
   var saveButton = $('.saveBtn');
@@ -17,7 +17,7 @@ $(function wrap() {
   // changes the background colors
 
   $('.description').each(function(){
-    var hourBlock = parseInt($(this).parent().attr('id').replace('hour-', ''));
+    var hourBlock = parseInt($(this).parent().attr('id').replace('hour', ''));
     if (hourBlock < currentTime){
     $(this).parent().addClass('past')
   } else if(hourBlock === currentTime) {
